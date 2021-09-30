@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{F1F2CD97-4881-41A7-A811-86B5771D76A6}|Default">
+  <MonoDevelop.Ide.ItemProperties.webapi2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="webapi2/Controllers/AccountController.cs">
+    <Files>
+      <File FileName="webapi2/Controllers/AccountController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LoginApp" expanded="True">
+            <Node name="LoginApp" expanded="True" />
+            <Node name="webapi2" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="AccountController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LoginApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.10C87131-3D4D-4ED2-9C6D-409A10480604" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LoginApp.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+</Properties>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:LoginApp.Views.Buttons" xmlns:customlayouts="clr-namespace:LoginApp.CustomLayouts"
+             x:Class="LoginApp.MainPage" BackgroundColor="Black"
+             xmlns:locals="clr-namespace:LoginApp.ViewModels"
+            >
+    <!--<ContentPage.BindingContext>
+        <locals:LoginPageViewModel/>
+    </ContentPage.BindingContext>-->
+    <ContentPage.Content>
+<Grid>
+    
+    <Image Source="https://bit.ly/3zB6MS6" Aspect="AspectFill" Opacity="0.7"/>
+    
+
+
+    <StackLayout VerticalOptions="CenterAndExpand" Margin="60">
+
+        <Label FontSize="50" FontFamily="NunitoRegular" HorizontalTextAlignment="Center" Text="Welcome" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+        <Label Margin="0,0,0,20" FontSize="20" FontFamily="NunitoRegular" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." HorizontalTextAlignment="Center" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+        <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="White" HeightRequest="20" Padding="15" BackgroundColor="Transparent"> <customlayouts:CustomEntry EntryCornerRadius="25" Placeholder="username" BackgroundColor="Transparent" x:Name="UserNameField" FontSize="20" Text="{Binding UserNameField}" HorizontalTextAlignment="Center" PlaceholderColor="White" TextColor="White"/> </Frame>
+        <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="White" HeightRequest="20" Padding="15" BackgroundColor="Transparent"> <customlayouts:CustomEntry Placeholder="password" x:Name="PasswordField" FontSize="20" IsPassword="True" Text="{Binding PasswordField}" HorizontalTextAlignment="Center" PlaceholderColor="White" TextColor="White"/> </Frame>
+
+   
+        
+                <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="Transparent" HeightRequest="20" Padding="15" BackgroundColor="MediumSeaGreen">
+                    <Button Margin="-15" CornerRadius="25" Padding="0" BackgroundColor="Transparent" Text="Login" Command="{Binding LoginButton}" TextColor="White" FontFamily="NunitoRegular" FontSize="20"/>
+                </Frame>
+        <StackLayout Orientation="Horizontal">
+            <Button FontSize="16" Text="Password" TextColor="White" FontFamily="NunitoRegular" HorizontalOptions="CenterAndExpand" Margin="0, 0, -70, 0" Padding="0" BorderWidth="0" BorderColor="White" HeightRequest="20"/>
+            <BoxView BackgroundColor="White" WidthRequest="1" HeightRequest="20" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 0"/>
+            <Button FontSize="16" Text="Register" TextColor="White" FontFamily="NunitoRegular" HorizontalOptions="CenterAndExpand" Margin="-70, 0, 0, 0" Padding="0" BorderWidth="0" HeightRequest="20"/>
+
+        </StackLayout>
+
+       
+
+    </StackLayout>
+
+</Grid>
+        
+        </ContentPage.Content>
+    </ContentPage>

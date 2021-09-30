@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\" />
+    <None Remove="Models\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\Buttons\" />
+    <None Remove="Fonts\Nunito-Regular.ttf" />
+    <None Remove="Fonts\Nunito-Italic.ttf" />
+    <None Remove="Fonts\Nunito-ExtraBold.ttf" />
+    <None Remove="CustomLayouts\" />
+    <None Remove="Models\building.jpeg" />
+    <None Remove="sqlite-net-pcl" />
+    <None Remove="Views\Pages\" />
+    <None Remove="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Buttons\" />
+    <Folder Include="CustomLayouts\" />
+    <Folder Include="Views\Pages\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Nunito-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-Italic.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-ExtraBold.ttf" />
+  </ItemGroup>
+</Project>

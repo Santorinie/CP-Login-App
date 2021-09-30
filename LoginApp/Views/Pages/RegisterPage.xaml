@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LoginApp.Views.Pages.RegisterPage"
+    xmlns:locals="clr-namespace:LoginApp.ViewModels"
+    xmlns:customlayouts="clr-namespace:LoginApp.CustomLayouts"
+    BackgroundColor="Black"
+    >
+
+   <!--<ContentPage.BindingContext>
+        <locals:RegisterPageViewModel/>
+    </ContentPage.BindingContext>-->
+
+    <Grid>
+        
+        <Image Source="https://bit.ly/3F3GjA1" Aspect="AspectFill" Opacity="0.7"/>
+       <!-- <Image Source="https://bit.ly/3zB6MS6" Aspect="AspectFill" Opacity="0.7"/> -->
+
+        <StackLayout VerticalOptions="CenterAndExpand" Margin="60">
+           <Label FontSize="50" Margin="0,0,0,30" FontFamily="NunitoRegular" HorizontalTextAlignment="Center" Text="Register" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+
+            <!--Email field-->
+            <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="White" HeightRequest="20" Padding="15" BackgroundColor="Transparent">
+                <customlayouts:CustomEntry IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" Keyboard="Email" EntryCornerRadius="25" Placeholder="Email" BackgroundColor="Transparent" x:Name="EmailField" FontSize="20" Text="{Binding EmailField}" HorizontalTextAlignment="Center" PlaceholderColor="White" TextColor="White"/>
+            </Frame>
+            <!--Password Field-->
+            <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="White" HeightRequest="20" Padding="15" BackgroundColor="Transparent">
+                <customlayouts:CustomEntry EntryCornerRadius="25" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" Keyboard="Default" Placeholder="Password" IsPassword="True" BackgroundColor="Transparent" x:Name="PasswordField" FontSize="20" Text="{Binding PasswordField}" HorizontalTextAlignment="Center" PlaceholderColor="White" TextColor="White"/>
+            </Frame>
+            <!--Confirm Password field-->
+            <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="White" HeightRequest="20" Padding="15" BackgroundColor="Transparent">
+                <customlayouts:CustomEntry IsPassword="True" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" Keyboard="Default" EntryCornerRadius="25" Placeholder="Confirm Password" BackgroundColor="Transparent" x:Name="ConfirmPasswordField" FontSize="20" Text="{Binding ConfirmPasswordField}" HorizontalTextAlignment="Center" PlaceholderColor="White" TextColor="White"/>
+            </Frame>
+            <!--Register button-->
+            <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="Transparent" HeightRequest="20" Padding="15" BackgroundColor="White">
+                <Button Margin="-15" CornerRadius="25" Padding="0" BackgroundColor="Transparent" Text="Register" Command="{Binding RegisterButton}" TextColor="Black" FontFamily="NunitoRegular" FontSize="20"/>
+            </Frame>
+            <!--Back to login button-->
+            <Button FontSize="16" Text="Back to Login" TextColor="White" FontFamily="NunitoRegular" HorizontalOptions="CenterAndExpand" Command="{Binding BackToLoginButton}" Padding="0" BorderWidth="0" BorderColor="White" HeightRequest="20"/>
+
+
+        </StackLayout>
+
+
+            
+
+    </Grid>
+
+
+</ContentPage>
