@@ -2,9 +2,13 @@
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using LoginApp.Helpers;
+using LoginApp.Models;
 using LoginApp.Services;
 using LoginApp.Views.Pages;
 using Xamarin.Forms;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace LoginApp.ViewModels
 {
@@ -16,20 +20,29 @@ namespace LoginApp.ViewModels
         private string _password;
         private string _confirmpassword;
         private IPageService _pageService;
+        private ApiHelper _apiHelper;
+        private UserModel userModel;
+        private Uri _apiRoute;
 
 
-        public RegisterPageViewModel(IPageService pageService)
+
+        public RegisterPageViewModel(IPageService pageService, ApiHelper apiHelper) //ctor
         {
             _pageService = pageService;
-            BackToLoginButton = new Command(async () => await BackToLogin());
+            _apiHelper = apiHelper;
+            _apiRoute = new Uri(@"https://localhost:9344/api/Account");
 
+            BackToLoginButton = new Command(async () => await BackToLogin());
+            RegisterButton = new Command(async () => await _apiHelper.RegistrationPostRequest(_apiRoute, new UserModel { UserName = _email, Email = _email, Password = _password, ConfirmPassword = _confirmpassword }));
+
+           
         }
 
         public ICommand BackToLoginButton { get; private set; }
         public ICommand RegisterButton { get; private set; }
 
 
-
+        [Required]
         public string EmailField
         {
             get { return _email; }
@@ -38,7 +51,7 @@ namespace LoginApp.ViewModels
             }
 
         }
-
+        [Required]
         public string PasswordField
         {
             get { return _password; }
@@ -47,7 +60,7 @@ namespace LoginApp.ViewModels
             }
             
         }
-
+        [Required]
         public string ConfirmPasswordField
         {
             get { return _confirmpassword; }
@@ -64,7 +77,7 @@ namespace LoginApp.ViewModels
             await _pageService.PopAsync();
             
         }
- 
+        
 
 
     }

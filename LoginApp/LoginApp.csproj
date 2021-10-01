@@ -13,6 +13,9 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
@@ -27,6 +30,10 @@
     <None Remove="sqlite-net-pcl" />
     <None Remove="Views\Pages\" />
     <None Remove="Services\" />
+    <None Remove="Helpers\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="System.Net.Http.Json" />
+    <None Remove="System.ComponentModel.Annotations" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -36,6 +43,7 @@
     <Folder Include="CustomLayouts\" />
     <Folder Include="Views\Pages\" />
     <Folder Include="Services\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Fonts\Nunito-Regular.ttf" />

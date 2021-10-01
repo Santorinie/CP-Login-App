@@ -9,13 +9,7 @@ Function=SystemNative_StrErrorR
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/System.dll
 Function=SystemNative_GetNonCryptographicallySecureRandomBytes
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
-Function=SystemNative_OpenDir
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
 Function=SystemNative_GetReadDirRBufferSize
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
-Function=SystemNative_ReadDirR
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
-Function=SystemNative_CloseDir
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
 Function=SystemNative_ReadLink
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
@@ -52,6 +46,12 @@ Function=SystemNative_UTime
 Function=SystemNative_UTimes
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
 Function=SystemNative_Unlink
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_OpenDir
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadDirR
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CloseDir
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
 Function=xamarin_timezone_get_local_name
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/mscorlib.dll
@@ -163,69 +163,37 @@ Function=xamarin_simd__NMatrix3_objc_msgSend_stret
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix3_objc_msgSendSuper_stret
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSend_NVector3_int_CGSize
+Function=xamarin_simd__CGPoint_objc_msgSend_NVector3_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSendSuper_NVector3_int_CGSize
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_NVector3_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSend_stret_NVector3_int_CGSize
+Function=xamarin_simd__CGPoint_objc_msgSend_stret_NVector3_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSendSuper_stret_NVector3_int_CGSize
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_stret_NVector3_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSend_NVector3_Int64_CGSize
+Function=xamarin_simd__NVector3_objc_msgSend_CGPoint_NMatrix4_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSendSuper_NVector3_Int64_CGSize
+Function=xamarin_simd__NVector3_objc_msgSendSuper_CGPoint_NMatrix4_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSend_stret_NVector3_Int64_CGSize
+Function=xamarin_simd__NVector3_objc_msgSend_stret_CGPoint_NMatrix4_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__CGPoint_objc_msgSendSuper_stret_NVector3_Int64_CGSize
+Function=xamarin_simd__NVector3_objc_msgSendSuper_stret_CGPoint_NMatrix4_nint_CGSize
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSend_CGPoint_NMatrix4_int_CGSize
+Function=xamarin_simd__NMatrix4_objc_msgSend_nint_CGSize_nfloat_nfloat
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSendSuper_CGPoint_NMatrix4_int_CGSize
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_nint_CGSize_nfloat_nfloat
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSend_stret_CGPoint_NMatrix4_int_CGSize
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_nint_CGSize_nfloat_nfloat
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSendSuper_stret_CGPoint_NMatrix4_int_CGSize
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_nint_CGSize_nfloat_nfloat
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSend_CGPoint_NMatrix4_Int64_CGSize
+Function=xamarin_simd__NMatrix4_objc_msgSend_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSendSuper_CGPoint_NMatrix4_Int64_CGSize
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSend_stret_CGPoint_NMatrix4_Int64_CGSize
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NVector3_objc_msgSendSuper_stret_CGPoint_NMatrix4_Int64_CGSize
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_int_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_int_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_stret_int_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_int_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_Int64_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_Int64_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_stret_Int64_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_Int64_CGSize_nfloat_nfloat
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_int
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_int
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_stret_int
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_int
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_Int64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_Int64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSend_stret_Int64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_Int64
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSend_NMatrix4_NVector3
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -235,13 +203,9 @@ Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix4_NVector3
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix4_NVector3
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_NVector3_NVector3_int_int
+Function=xamarin_simd__IntPtr_objc_msgSend_NVector3_NVector3_nint_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_NVector3_NVector3_int_int
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_NVector3_NVector3_Int64_Int64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_NVector3_NVector3_Int64_Int64
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_NVector3_NVector3_nint_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__NVector3_objc_msgSend_CGPoint_NMatrix4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -287,33 +251,21 @@ Function=xamarin_simd__NMatrix4x3_objc_msgSend_stret
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix4x3_objc_msgSendSuper_stret
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSend_IntPtr
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSend_IntPtr_IntPtr_UInt32
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_IntPtr_nuint_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_UInt32
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_nuint_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSend_IntPtr_IntPtr_UInt64
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_nint_nint_nint_nuint_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_UInt64
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_nint_nint_nint_nuint_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSend_IntPtr_nint_nint_nint_UInt32
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_nuint_nint_nuint_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_nint_nint_nint_UInt32
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSend_IntPtr_nint_nint_nint_UInt64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_nint_nint_nint_UInt64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSend_IntPtr_UInt32_nint_UInt32
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_UInt32_nint_UInt32
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSend_IntPtr_UInt64_nint_UInt64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_UInt64_nint_UInt64
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_nuint_nint_nuint_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector2_objc_msgSend
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -471,9 +423,9 @@ Function=xamarin_simd__IntPtr_objc_msgSend_GKQuad_float
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKQuad_float
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_GKQuad
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -483,17 +435,17 @@ Function=xamarin_simd__IntPtr_objc_msgSend_GKQuad
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKQuad
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2_float
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2_float_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2_float
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2_float_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2_Vector2_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2_Vector2_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2_exception
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__GKQuad_objc_msgSend
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -503,13 +455,9 @@ Function=xamarin_simd__GKQuad_objc_msgSend_stret
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__GKQuad_objc_msgSendSuper_stret
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2_int
+Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2_int
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2_Int64
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2_Int64
+Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -723,21 +671,13 @@ Function=xamarin_simd__Vector3_objc_msgSend_stret_Vector2i_Vector2i
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Vector2i_Vector2i
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_bool_IntPtr_Vector2i_nint_nuint_int_bool
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_bool_IntPtr_Vector2i_nint_nuint_nint_bool
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_bool_IntPtr_Vector2i_nint_nuint_int_bool
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_bool_IntPtr_Vector2i_nint_nuint_nint_bool
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_bool_IntPtr_Vector2i_nint_nuint_Int64_bool
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_nint_IntPtr_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_bool_IntPtr_Vector2i_nint_nuint_Int64_bool
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_int_IntPtr_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_int_IntPtr_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_Int64_IntPtr_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_Int64_IntPtr_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_nint_IntPtr_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSend_float_float_IntPtr_Vector2i
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -755,145 +695,77 @@ Function=xamarin_simd__void_objc_msgSend_Matrix4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__void_objc_msgSendSuper_Matrix4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_nuint_Vector2
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_nuint_Vector2
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_nuint_Vector3
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Vector2
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_nuint_Vector3
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Vector3
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_nuint_Vector4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Vector3
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_nuint_Vector4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Vector3
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_nuint_Matrix4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Vector3
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_nuint_Matrix4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Vector4
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_nuint_NMatrix4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Vector4
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_nuint_NMatrix4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Vector4
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Vector4
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Matrix4
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Matrix4
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Matrix4
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Matrix4
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_NMatrix4
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_NMatrix4
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_NMatrix4
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_NMatrix4
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_bool_int_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_bool_int_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_bool_Int64_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_bool_int_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_bool_Int64_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_bool_Int64_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_bool_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_int_UInt32_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_int_UInt32_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_int_bool_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_nint_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_int_bool_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_nint_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_Int64_bool_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2i_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_Int64_bool_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2i_nint_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2i_int_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_nuint_nuint_nint_bool_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2i_int_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_nuint_nuint_nint_bool_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2i_Int64_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_nint_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2i_Int64_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_nint_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_nuint_nuint_int_bool_bool_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_nuint_nint_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_nuint_nuint_int_bool_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_nuint_nuint_Int64_bool_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_nuint_nuint_Int64_bool_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_int_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_int_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_Int64_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_Int64_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_nuint_int_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_nuint_int_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_nuint_Int64_bool_IntPtr
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_nuint_Int64_bool_IntPtr
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_nuint_nint_bool_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__bool_objc_msgSend_Vector2i_nint_float_IntPtr_IntPtr_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -903,37 +775,21 @@ Function=xamarin_simd__bool_objc_msgSend_Vector2i_IntPtr_IntPtr_IntPtr_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__bool_objc_msgSendSuper_Vector2i_IntPtr_IntPtr_IntPtr_IntPtr
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_nint
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_Int64
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_nint_bool
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_Int64
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_nint_bool
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_int_bool
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_nint_Vector2i_float_float_float_float
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_int_bool
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_nint_Vector2i_float_float_float_float
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_Int64_bool
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_nint_Vector2i_float_float_float_float_float
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_Int64_bool
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_int_Vector2i_float_float_float_float
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_int_Vector2i_float_float_float_float
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Int64_Vector2i_float_float_float_float
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Int64_Vector2i_float_float_float_float
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_int_Vector2i_float_float_float_float_float
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_int_Vector2i_float_float_float_float_float
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Int64_Vector2i_float_float_float_float_float
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Int64_Vector2i_float_float_float_float_float
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_nint_Vector2i_float_float_float_float_float
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_Vector2i
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
@@ -1035,6 +891,34 @@ Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_stret_Vector4i
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_stret_Vector4i
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend_stret
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper_stret
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Quaternion_IntPtr
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Quaternion_IntPtr
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Quaternion
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Quaternion
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2d_IntPtr
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2d_IntPtr
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2d
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2d
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2d_nint
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2d_nint
+	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector3_objc_msgSend_Vector3
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector3_objc_msgSendSuper_Vector3
@@ -1058,14 +942,6 @@ Function=xamarin_vector_float3__Vector4_objc_msgSendSuper_stret
 Function=xamarin_vector_float3__void_objc_msgSend_Vector4
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_vector_float3__void_objc_msgSendSuper_Vector4
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__Quaternion_objc_msgSend
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__Quaternion_objc_msgSendSuper
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__Quaternion_objc_msgSend_stret
-	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_simd__Quaternion_objc_msgSendSuper_stret
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__void_objc_msgSend_Quaternion
 	/Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/ipod touch (7th generation)-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll

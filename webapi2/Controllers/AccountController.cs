@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LoginApp.Models;
 using LoginApp.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -24,25 +25,47 @@ namespace webapi2.Controllers
             this._signInManager = signInManager;
 
 
-
-
         }
 
         [HttpGet]
         public IActionResult Register()
         {
-            return View();
+            return Ok("Szia");
         }
+
+
         [HttpPost]
-        public IActionResult Register(RegisterPageViewModel model)
+        public async Task<IActionResult> Register([FromBody] UserModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = model.EmailField, Email = model.EmailField };
+                var user = new IdentityUser { UserName = model.UserName, Email = model.Email };
+                var result = await _userManager.CreateAsync(user, model.Password);
+
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, false);
+                    return Ok("Registration Successful");
+                }
+                else
+                {
+                    foreach (var item in result.Errors)
+                    {
+                       ModelState.AddModelError("", item.Description);
+
+                    }
+                    
+                }
+            }
+            else
+            {
+                
             }
 
-            return View(model);
+            
         }
+
+
 
     }
 }

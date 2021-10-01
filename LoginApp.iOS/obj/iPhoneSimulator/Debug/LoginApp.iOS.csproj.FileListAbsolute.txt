@@ -50,6 +50,13 @@
 /Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/LoginApp.iOS.csproj.CopyComplete
 /Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/LoginApp.iOS.exe
 /Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/LoginApp.iOS.pdb
+/Users/mac/Projects/LoginApp/LoginApp.iOS/bin/iPhoneSimulator/Debug/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/mac/Projects/LoginApp/LoginApp.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/mac/Projects/LoginApp/LoginApp.iOS/bin/iPhoneSimulator/Debug/System.Buffers.dll
+/Users/mac/Projects/LoginApp/LoginApp.iOS/bin/iPhoneSimulator/Debug/System.Net.Http.Json.dll
+/Users/mac/Projects/LoginApp/LoginApp.iOS/bin/iPhoneSimulator/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/mac/Projects/LoginApp/LoginApp.iOS/bin/iPhoneSimulator/Debug/System.Text.Encodings.Web.dll
+/Users/mac/Projects/LoginApp/LoginApp.iOS/bin/iPhoneSimulator/Debug/System.Text.Json.dll
 /Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-15.0/actool/_PartialAppManifest.items
 /Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-15.0/actool/_BundleResourceWithLogicalName.items
 /Users/mac/Projects/LoginApp/LoginApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-15.0/ibtool/_BundleResourceWithLogicalName.items
