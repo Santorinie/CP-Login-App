@@ -49,17 +49,20 @@ namespace webapi2.Controllers
                 }
                 else
                 {
+                    
                     foreach (var item in result.Errors)
                     {
                        ModelState.AddModelError("", item.Description);
 
                     }
                     
+                    return BadRequest("Something went wrong");
+                    
                 }
             }
             else
             {
-                
+                return BadRequest("Missing Parameters");
             }
 
             

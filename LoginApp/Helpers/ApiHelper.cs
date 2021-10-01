@@ -5,6 +5,8 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using LoginApp.Models;
+using LoginApp.ViewModels;
+using LoginApp.Views.Pages;
 
 namespace LoginApp.Helpers
 {
@@ -34,10 +36,14 @@ namespace LoginApp.Helpers
 
             if (response.IsSuccessStatusCode)
             {
-                return response.StatusCode.ToString();   
+                var fasz = response.ReasonPhrase;
+                return response.ReasonPhrase;
+                
+                
             }
             else
             {
+                var fasz = response.ReasonPhrase;
                 return response.ReasonPhrase;
             }
         }

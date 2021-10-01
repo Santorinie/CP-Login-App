@@ -36,6 +36,8 @@
             <Frame HasShadow="False" Margin="0, 0, 0, 10" CornerRadius="25" BorderColor="Transparent" HeightRequest="20" Padding="15" BackgroundColor="White">
                 <Button Margin="-15" CornerRadius="25" Padding="0" BackgroundColor="Transparent" Text="Register" Command="{Binding RegisterButton}" TextColor="Black" FontFamily="NunitoRegular" FontSize="20"/>
             </Frame>
+            <!--Error message-->
+            <Label FontSize="20" FontFamily="NunitoRegular" Margin="10,0,0,10" TextColor="Crimson" IsVisible="{Binding ErrorMsg}" HorizontalTextAlignment="Center" Text="Something went wrong" />
             <!--Back to login button-->
             <Button FontSize="16" Text="Back to Login" TextColor="White" FontFamily="NunitoRegular" HorizontalOptions="CenterAndExpand" Command="{Binding BackToLoginButton}" Padding="0" BorderWidth="0" BorderColor="White" HeightRequest="20"/>
 

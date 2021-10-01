@@ -8,7 +8,7 @@ using LoginApp.Services;
 using LoginApp.Views.Pages;
 using Xamarin.Forms;
 using System.ComponentModel.DataAnnotations;
-
+using System.Runtime.CompilerServices;
 
 namespace LoginApp.ViewModels
 {
@@ -16,6 +16,7 @@ namespace LoginApp.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        private bool _errorMsg;
         private string _email;
         private string _password;
         private string _confirmpassword;
@@ -24,6 +25,8 @@ namespace LoginApp.ViewModels
         private UserModel userModel;
         private Uri _apiRoute;
 
+        public ICommand BackToLoginButton { get; private set; }
+        public ICommand RegisterButton { get; private set; }
 
 
         public RegisterPageViewModel(IPageService pageService, ApiHelper apiHelper) //ctor
@@ -33,14 +36,14 @@ namespace LoginApp.ViewModels
             _apiRoute = new Uri(@"https://localhost:9344/api/Account");
 
             BackToLoginButton = new Command(async () => await BackToLogin());
-            RegisterButton = new Command(async () => await _apiHelper.RegistrationPostRequest(_apiRoute, new UserModel { UserName = _email, Email = _email, Password = _password, ConfirmPassword = _confirmpassword }));
+            RegisterButton = new Command(async () => await some(_apiRoute, new UserModel { UserName = _email, Email = _email, Password = _password, ConfirmPassword = _confirmpassword }));
+            
 
-           
         }
 
-        public ICommand BackToLoginButton { get; private set; }
-        public ICommand RegisterButton { get; private set; }
+        // _apiRoute, new UserModel { UserName = _email, Email = _email, Password = _password, ConfirmPassword = _confirmpassword }
 
+        public bool ErrorMsg { get { return _errorMsg; } set { _errorMsg = value; OnPropertyChanged(); } }
 
         [Required]
         public string EmailField
@@ -77,7 +80,33 @@ namespace LoginApp.ViewModels
             await _pageService.PopAsync();
             
         }
-        
+
+        private async Task some(Uri route, UserModel model)
+        {
+            var result = await _apiHelper.RegistrationPostRequest(route,model);
+
+            if (result == "OK")
+            {
+                ErrorMsg = false;
+                await _pageService.PopAsync();
+                await _pageService.DisplayAlert("Registration","Registration successful","Ok");
+            }
+            else
+            {
+                ErrorMsg = true;
+            }
+        }
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
 
 
     }
