@@ -17,6 +17,7 @@ namespace LoginApp.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         private bool _errorMsg;
+        private bool _activityIndicator;
         private string _email;
         private string _password;
         private string _confirmpassword;
@@ -31,6 +32,7 @@ namespace LoginApp.ViewModels
 
         public RegisterPageViewModel(IPageService pageService, ApiHelper apiHelper) //ctor
         {
+            _activityIndicator = false;
             _pageService = pageService;
             _apiHelper = apiHelper;
             _apiRoute = new Uri(@"https://localhost:9344/api/Account");
@@ -44,6 +46,8 @@ namespace LoginApp.ViewModels
         // _apiRoute, new UserModel { UserName = _email, Email = _email, Password = _password, ConfirmPassword = _confirmpassword }
 
         public bool ErrorMsg { get { return _errorMsg; } set { _errorMsg = value; OnPropertyChanged(); } }
+
+        public bool ActivityIndicator { get { return _activityIndicator; } set { _activityIndicator = value; OnPropertyChanged(); } }
 
         [Required]
         public string EmailField
@@ -83,16 +87,20 @@ namespace LoginApp.ViewModels
 
         private async Task some(Uri route, UserModel model)
         {
+            ActivityIndicator = true;
+            ErrorMsg = false;
             var result = await _apiHelper.RegistrationPostRequest(route,model);
 
             if (result == "OK")
             {
                 ErrorMsg = false;
+                ActivityIndicator = false;
                 await _pageService.PopAsync();
                 await _pageService.DisplayAlert("Registration","Registration successful","Ok");
             }
             else
             {
+                ActivityIndicator = false;
                 ErrorMsg = true;
             }
         }
