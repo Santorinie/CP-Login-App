@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LoginApp.Helpers;
 using LoginApp.Services;
 using LoginApp.ViewModels;
 using Xamarin.Forms;
@@ -14,7 +15,9 @@ namespace LoginApp.Views.Pages
 
             var pageService = new PageService();
 
-            BindingContext = new LoginPageViewModel(pageService);
+            ApiHelper apiHelper = new ApiHelper();
+
+            BindingContext = new LoginPageViewModel(pageService,apiHelper);
 
             //var image = new Uri(@"https://bit.ly/3zB6MS6");
 

@@ -18,34 +18,50 @@ namespace LoginApp.Helpers
 
         public async Task GetMethod(Uri route)
         {
-            HttpClientHandler insecureHandler = GetInsecureHandler();
-            HttpClient httpClient = new HttpClient(insecureHandler);
+            HttpClient httpClient = InitializeHttpClient();
 
             var response = await httpClient.GetAsync(route);
         }
         
 
-        public async Task<string> RegistrationPostRequest(Uri route, UserModel model)
+        public async Task<string> PostRequest(Uri route, RegisterModel model)
         {
-            HttpClientHandler insecureHandler = GetInsecureHandler();
-            HttpClient httpClient = new HttpClient(insecureHandler);
+
+            HttpClient httpClient = InitializeHttpClient();
             
-            var modelSerialized = JsonSerializer.Serialize(model);
-            var stringcontent = new StringContent(modelSerialized, Encoding.UTF8,"application/json");
+            
+            var stringcontent = new StringContent(JsonSerializer.Serialize(model), Encoding.UTF8,"application/json");
             var response = await httpClient.PostAsync(route,stringcontent);
 
             if (response.IsSuccessStatusCode)
             {
-                var fasz = response.ReasonPhrase;
                 return response.ReasonPhrase;
                 
                 
             }
             else
             {
-                var fasz = response.ReasonPhrase;
                 return response.ReasonPhrase;
             }
+        }
+
+        public async Task<string> PostRequest(Uri route, LoginModel model)
+        {
+            HttpClient httpClient = InitializeHttpClient();
+
+            var stringcontent = new StringContent(JsonSerializer.Serialize(model), Encoding.UTF8, "application/json");
+            var response = await httpClient.PostAsync(route, stringcontent);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return response.ReasonPhrase;
+            }
+            else
+            {
+                return response.ReasonPhrase;
+            }
+
+
         }
 
         // This method makes iOS and Android ignore self-signed (localhost) SSL certificates.
@@ -61,6 +77,11 @@ namespace LoginApp.Helpers
                 return errors == System.Net.Security.SslPolicyErrors.None;
             };
             return handler;
+        }
+
+        private HttpClient InitializeHttpClient()
+        {
+            return new HttpClient(GetInsecureHandler());
         }
     }
 }

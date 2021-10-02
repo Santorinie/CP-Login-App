@@ -1,10 +1,15 @@
-﻿<Properties StartupConfiguration="{F1F2CD97-4881-41A7-A811-86B5771D76A6}|Default">
+﻿<Properties StartupConfiguration="Multiple Projects">
   <MonoDevelop.Ide.ItemProperties.webapi2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoginApp/CustomLayouts/CustomEntry.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginApp/Models/LoginModel.cs">
     <Files>
-      <File FileName="LoginApp/Views/Pages/RegisterPage.xaml" Line="39" Column="38" />
-      <File FileName="LoginApp/Views/Pages/LoginPage.xaml" Line="25" Column="43" />
-      <File FileName="LoginApp/CustomLayouts/CustomEntry.cs" Line="1" Column="1" />
+      <File FileName="LoginApp/Views/Pages/LoginPage.xaml" Line="33" Column="38" />
+      <File FileName="LoginApp/ViewModels/LoginPageViewModel.cs" Line="104" Column="29" />
+      <File FileName="webapi2/Controllers/AccountController.cs" Line="28" Column="10" />
+      <File FileName="LoginApp/Helpers/ApiHelper.cs" Line="59" Column="17" />
+      <File FileName="LoginApp/ViewModels/RegisterPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="LoginApp/Services/PageService.cs" Line="42" Column="10" />
+      <File FileName="LoginApp/Services/IPageService.cs" Line="1" Column="1" />
+      <File FileName="LoginApp/Models/LoginModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,15 +17,17 @@
           <Node name="LoginApp" expanded="True">
             <Node name="LoginApp" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="CustomLayouts" expanded="True">
-                <Node name="CustomEntry.cs" selected="True" />
-              </Node>
+              <Node name="CustomLayouts" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="LoginModel.cs" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Pages" expanded="True">
                   <Node name="ForgotPasswordPage.xaml" expanded="True" />
+                  <Node name="LoginPage.xaml" expanded="True" />
                   <Node name="RegisterPage.xaml" expanded="True" />
                 </Node>
               </Node>
@@ -34,8 +41,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ClassLibrary1 FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.LoginApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.10C87131-3D4D-4ED2-9C6D-409A10480604" />
+  <MonoDevelop.Ide.ItemProperties.LoginApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7B1D4E4D-57BD-4B51-B1D0-96808830B094" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

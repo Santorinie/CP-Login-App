@@ -37,10 +37,10 @@ namespace LoginApp.ViewModels
             await _pageService.PopModalAsync();
         }
 
-        private async Task Submit()
-        {
+        //private async Task Submit()
+        //{
             
-        }
+        //}
 
     }
 }

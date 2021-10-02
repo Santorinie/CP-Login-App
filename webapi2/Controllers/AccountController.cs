@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace webapi2.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class AccountController : Controller
     {
@@ -35,7 +35,7 @@ namespace webapi2.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Register([FromBody] UserModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
             if (ModelState.IsValid)
             {
@@ -69,6 +69,37 @@ namespace webapi2.Controllers
         }
 
 
+        [HttpGet]
+        [ActionName("Login")]
+        public IActionResult Login()
+        {
+            return Ok();
+        }
+
+        [HttpPost]
+        [ActionName("Login")]
+        public async Task<IActionResult> Login([FromBody] LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(model.Email,model.Password,model.RememberMe,false);
+                if (result.Succeeded)
+                {
+                    return Ok("Login Successful");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty,"Invalid login attempt");
+                    return BadRequest("Login failed");
+                }
+            }
+            else
+            {
+                return BadRequest("Invalid modelstate");
+            }
+
+
+        }
 
     }
 }
