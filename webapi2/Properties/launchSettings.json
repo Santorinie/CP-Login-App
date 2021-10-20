@@ -18,7 +18,7 @@
     "webapi2": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:9344;http://localhost:17061",
+      "applicationUrl": "https://192.168.1.104:9356;http://192.168.1.104:9357",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

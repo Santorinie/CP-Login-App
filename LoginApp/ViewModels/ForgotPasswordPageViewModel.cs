@@ -14,13 +14,25 @@ namespace LoginApp.ViewModels
         public ICommand SubmitButton { get; private set; }
         public ICommand BackToLoginButton { get; private set; }
         private string _email;
-        
+        private Uri _image;
+
+
+        public Uri Image
+        {
+            get { return _image; }
+            set {
+                _image = value;
+                
+                    }
+        }
 
         public ForgotPasswordPageViewModel(IPageService pageService)
         {
             _pageService = pageService;
 
             BackToLoginButton = new Command(async () => await PopModalForgotPasswordPage());
+
+            Image = new Uri("https://bit.ly/3D3wkc2");
         }
 
         public string EmailField

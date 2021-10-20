@@ -5,6 +5,7 @@
     x:Class="LoginApp.Views.Pages.LoginPage"
     xmlns:locals="clr-namespace:LoginApp.ViewModels"
     BackgroundColor="Black"
+    xmlns:local="clr-namespace:LoginApp"
     xmlns:customlayouts="clr-namespace:LoginApp.CustomLayouts"
     >
 <!--<ContentPage.BindingContext>
@@ -13,9 +14,16 @@
 <ContentPage.Content>
     <Grid>
 
-        <Image Source="https://bit.ly/3kV5EUO" Aspect="AspectFill" Opacity="0.7"/>
-
-
+        <!--<Image Source="{local:ImageResource LoginApp.Views.Images.login.jpeg}" Aspect="AspectFill" Opacity="0.7"/>-->
+        
+        <Image 
+Aspect="AspectFill" Opacity="0.7">
+	<Image.Source>
+		<UriImageSource Uri="{Binding Image}" 
+			CacheValidity="14" 
+			CachingEnabled="true"/>
+	</Image.Source>
+</Image>
 
         <StackLayout VerticalOptions="CenterAndExpand" Margin="60">
             <!--Welcome text-->

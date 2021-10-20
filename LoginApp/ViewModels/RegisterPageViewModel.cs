@@ -25,9 +25,23 @@ namespace LoginApp.ViewModels
         private ApiHelper _apiHelper;
         private Uri _apiRoute;
         private string _errorText;
+        private bool _onGoinEvent;
 
         public ICommand BackToLoginButton { get; private set; }
         public ICommand RegisterButton { get; private set; }
+
+        private Uri _image;
+
+
+        public Uri Image
+        {
+            get { return _image; }
+            set
+            {
+                _image = value;
+
+            }
+        }
 
 
         public RegisterPageViewModel(IPageService pageService, ApiHelper apiHelper) //ctor
@@ -35,12 +49,15 @@ namespace LoginApp.ViewModels
             _activityIndicator = false;
             _pageService = pageService;
             _apiHelper = apiHelper;
-            _apiRoute = new Uri(@"https://localhost:9344/api/Account/Register");
+
+            UriBuilder uriBuilder = new UriBuilder(apiHelper.defRoute);
+            uriBuilder.Path += "api/Account/Register";
+            _apiRoute = uriBuilder.Uri;
 
             BackToLoginButton = new Command(async () => await BackToLogin());
             RegisterButton = new Command(async () => await RegisterFunction(_apiRoute, new RegisterModel { UserName = _email, Email = _email, Password = _password, ConfirmPassword = _confirmpassword }));
-            
 
+            Image = new Uri("https://bit.ly/3F3GjA1");
         }
 
 
@@ -50,8 +67,7 @@ namespace LoginApp.ViewModels
 
         public string ErrorText { get { return _errorText; } set { _errorText = value; OnPropertyChanged(); } }
 
-        [Required]
-        [EmailAddress]
+
         public string EmailField
         {
             get { return _email; }
@@ -60,8 +76,7 @@ namespace LoginApp.ViewModels
             }
 
         }
-        [Required]
-        [DataType(DataType.Password)]
+
         public string PasswordField
         {
             get { return _password; }
@@ -70,8 +85,7 @@ namespace LoginApp.ViewModels
             }
             
         }
-        [Required]
-        [DataType(DataType.Password)]
+
         public string ConfirmPasswordField
         {
             get { return _confirmpassword; }
@@ -91,31 +105,41 @@ namespace LoginApp.ViewModels
 
         private async Task RegisterFunction(Uri route, RegisterModel model)
         {
-            try
+            if (_onGoinEvent == false)
             {
-                ActivityIndicator = true;
-                ErrorMsg = false;
-                string result = await _apiHelper.PostRequest(route, model);
+                _onGoinEvent = true;
 
-                if (result == "OK")
+                try
                 {
+                    ActivityIndicator = true;
                     ErrorMsg = false;
-                    ActivityIndicator = false;
-                    await _pageService.PopAsync();
-                    await _pageService.DisplayAlert("Registration", "Registration successful", "Ok");
+                    string result = await _apiHelper.PostRequest(route, model);
+
+                    if (result == "OK")
+                    {
+                        ErrorMsg = false;
+                        ActivityIndicator = false;
+                        await _pageService.PopAsync();
+                        await _pageService.DisplayAlert("Registration", "Registration successful", "Ok");
+                        //delete creds
+                        EmailField = string.Empty;
+                        PasswordField = string.Empty;
+                        ConfirmPasswordField = string.Empty;
+                    }
+                    else
+                    {
+                        ActivityIndicator = false;
+                        ErrorMsg = true;
+                        ErrorText = "Registration unsuccessful";
+                    }
                 }
-                else
+                catch (Exception)
                 {
                     ActivityIndicator = false;
                     ErrorMsg = true;
-                    ErrorText = "Registration unsuccessful";
+                    ErrorText = "Connection with the server cannot be established";
                 }
-            }
-            catch (Exception)
-            {
-                ActivityIndicator = false;
-                ErrorMsg = true;
-                ErrorText = "Connection with the server cannot be established";
+                _onGoinEvent = false;
             }
         }
 

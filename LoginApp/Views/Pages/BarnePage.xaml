@@ -1,9 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
+<ContentPage NavigationPage.HasBackButton="True"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="LoginApp.Views.Pages.BarnePage">
+    x:Class="LoginApp.Views.Pages.BarnePage"
+             xmlns:local="clr-namespace:LoginApp"
+    xmlns:pic="clr-namespace:LoginApp.Views.Buttons"
+    >
+    
     <ContentPage.Content>
-        
+
+        <Grid>
+
+
+            <Image Source="{local:ImageResource LoginApp.Views.Images.barne.jpeg}" Aspect="AspectFill"/>
+
+
+
+
+
+        </Grid>
+
+
+
+
+
+
+
+
+
     </ContentPage.Content>
 </ContentPage>

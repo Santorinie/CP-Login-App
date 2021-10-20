@@ -14,7 +14,10 @@ namespace LoginApp.Helpers
     {
         public ApiHelper()
         {
+            defRoute = new Uri(@"https://134.255.101.99:9356");
         }
+
+        public Uri defRoute { get; set; }
 
         public async Task GetMethod(Uri route)
         {

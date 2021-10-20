@@ -34,6 +34,12 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="System.Net.Http.Json" />
     <None Remove="System.ComponentModel.Annotations" />
+    <None Remove="Views\Images\" />
+    <None Remove="Views\Images\barne.jpeg" />
+    <None Remove="Views\Images\forgotpw.jpeg" />
+    <None Remove="Views\Images\login.jpeg" />
+    <None Remove="Views\Images\register.jpeg" />
+    <None Remove="Views\Images\appicon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -44,10 +50,15 @@
     <Folder Include="Views\Pages\" />
     <Folder Include="Services\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Views\Images\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Fonts\Nunito-Regular.ttf" />
     <EmbeddedResource Include="Fonts\Nunito-Italic.ttf" />
     <EmbeddedResource Include="Fonts\Nunito-ExtraBold.ttf" />
+    <EmbeddedResource Include="Views\Images\barne.jpeg" />
+    <EmbeddedResource Include="Views\Images\forgotpw.jpeg" />
+    <EmbeddedResource Include="Views\Images\login.jpeg" />
+    <EmbeddedResource Include="Views\Images\register.jpeg" />
   </ItemGroup>
 </Project>

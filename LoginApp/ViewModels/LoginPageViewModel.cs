@@ -31,6 +31,8 @@ namespace LoginApp.ViewModels
         public ICommand LoginButton { get; private set; }
         public ICommand RegisterPageButton { get; private set; }
         public ICommand ForgotPasswordButton { get; private set; }
+        private Uri _image;
+        private bool _onGoingEvent;
 
         // Constructor -----------------------------------------------------------------------------------------------------------------
 
@@ -38,14 +40,19 @@ namespace LoginApp.ViewModels
         {
             _apiHelper = apiHelper;
             _pageService = pageService;
-            _apiRoute = new Uri(@"https://localhost:9344/api/Account/Login");
+            UriBuilder uriBuilder = new UriBuilder(apiHelper.defRoute);
+            uriBuilder.Path += "api/Account/Login";
+            _apiRoute = uriBuilder.Uri;
             
+            Image = new Uri("https://bit.ly/3kV5EUO");
 
             RegisterPageButton = new Command(async () => await PushRegisterPage());
 
             ForgotPasswordButton = new Command(async () => await PushModalForgotPasswordPage());
 
-            LoginButton = new Command(async () => await LoginFunction(_apiRoute,new LoginModel { Email = EmailField, Password = PasswordField, RememberMe = RememberMe}));
+            
+
+            LoginButton = new Command(async () => await LoginFunction(_apiRoute, new LoginModel { Email = EmailField, Password = PasswordField, RememberMe = RememberMe }));
         }
 
 
@@ -59,6 +66,19 @@ namespace LoginApp.ViewModels
         public bool RememberMe { get { return _rememberMe; } set { _rememberMe = value; OnPropertyChanged(); } }
 
         public string ErrorText { get { return _errorText; } set { _errorText = value; OnPropertyChanged(); } }
+
+    
+
+
+        public Uri Image
+        {
+            get { return _image; }
+            set
+            {
+                _image = value;
+
+            }
+        }
 
         public string EmailField {
             get { return _email; }
@@ -81,31 +101,47 @@ namespace LoginApp.ViewModels
 
         private async Task LoginFunction(Uri route, LoginModel model)
         {
-            try
+            if (_onGoingEvent == false)
             {
-                ActivityIndicator = true;
-                ErrorMsg = false;
-                string result = await _apiHelper.PostRequest(route, model);
+                _onGoingEvent = true;
 
-                if (result == "OK")
+                try
                 {
+                    ActivityIndicator = true;
                     ErrorMsg = false;
-                    ActivityIndicator = false;
-                    //await _pageService.PopAsync();
-                    await _pageService.DisplayAlert("Login", "Login Successful", "Ok");
+                    string result = await _apiHelper.PostRequest(route, model);
+
+                    if (result == "OK")
+                    {
+                        ErrorMsg = false;
+                        ActivityIndicator = false;
+                        //await _pageService.PopAsync();
+                        await _pageService.DisplayAlert("Login", "Login Successful", "Ok");
+                        //redirect
+                        await _pageService.PushAsync(new BarnePage());
+                        //Empty props
+                        EmailField = string.Empty;
+                        PasswordField = string.Empty;
+                    }
+                    else
+                    {
+                        ActivityIndicator = false;
+                        ErrorMsg = true;
+                        ErrorText = "Login unsuccessful";
+                    }
+                    
                 }
-                else
+                catch (Exception)
                 {
                     ActivityIndicator = false;
                     ErrorMsg = true;
-                    ErrorText = "Login unsuccessful";
+                    ErrorText = "Connection with the server cannot be established";
                 }
+                _onGoingEvent = false;
             }
-            catch (Exception)
+            else
             {
-                ActivityIndicator = false;
-                ErrorMsg = true;
-                ErrorText = "Connection with the server cannot be established";
+                
             }
         }
 
